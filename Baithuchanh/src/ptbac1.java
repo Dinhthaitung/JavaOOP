@@ -9,6 +9,7 @@ public class ptbac1 {
         a = sc.nextDouble();
         System.out.println("Nhap b:");
         b=sc.nextDouble();
+        sc.close();
         if(a==0){
             if(b==0){
                 System.out.println("Phuong trinh co vo so nghiem ");
