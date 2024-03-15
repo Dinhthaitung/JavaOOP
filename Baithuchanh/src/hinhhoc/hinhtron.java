@@ -1,3 +1,4 @@
+package hinhhoc;
 import java.util.Scanner;
 public class hinhtron {
 
