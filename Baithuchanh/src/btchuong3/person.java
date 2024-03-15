@@ -1,20 +1,32 @@
 package btchuong3;
 
+
+import java.util.Scanner;
+
 public class person {
-    public String HoTen;
-    public String QueQuan;
-    public String NgheNghiep;
-    public int NamSinh;
-public person(){
-    HoTen = "Dinh Thai Tung";
-    QueQuan = "Quang Ninh";
-    NgheNghiep = "Sinh Vien";
-    NamSinh = 2004;
-}
-public void inthongtin(){
-    System.out.println(HoTen + "-" + QueQuan + "-" + NgheNghiep + "-" + NamSinh);
-}
-public void inthongtin(String Ten, String QueQuan, String NgheNghiep, int NamSinh){
-    System.out.println(Ten + "-" + QueQuan + "-" + NgheNghiep + "-" + NamSinh);
-}
+   
+    String Ten;
+    int Tuoi;
+    
+    public void nhapthongtin(){
+        System.out.println("Nhap thong tin :");
+        Scanner sc = new Scanner(System.in);
+        Ten = sc.nextLine();
+        Tuoi= sc.nextInt();
+        sc.close();
+
+    }
+    public void Inthongtin(){
+        System.out.println(Ten);
+        System.out.println(Tuoi);
+    }
+    public void Inthongtin(String Ten ,int Tuoi){
+        System.out.println(Ten);
+        System.out.println(Tuoi);
+    
+    }
+    public person(){
+        Ten = "DinhThaiTung ";
+        Tuoi= 19;
+    }
 }
